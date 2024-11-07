@@ -1,0 +1,107 @@
+nav {
+    font-family: stdFont;
+    background-color: var(--my_gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 30px;
+    height: 10vh;
+}
+
+.nav_bar_img {
+    height: 80%;
+}
+
+.nav_bar_link {
+    max-width: 20%;
+    max-height: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    padding: 10px;
+}
+
+.nav_bar_link:link, .nav_bar_link:visited {
+    color: var(--my_white);
+}
+
+.nav_bar_link:hover {
+    background-color: var(--my_dark);
+    border-bottom: 3px solid var(--my_red);
+    border-radius: 5px;
+}
+
+.nav_bar_link:active {
+    background-color: rgb(60, 60, 60);
+}
+
+.menu_hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    #home_link {
+        display: block;
+        font-size: 24px;
+    }
+
+    .nav_bar_img, .nav_bar_link {
+        display: none;
+    }
+
+    .menu_top_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu_hidden {
+        display: block;
+        height: 80%;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar_responsive {
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+        padding: 10px;
+    }
+
+    .nav_bar_link_responsive {
+        display: block;
+        height: 10vh;
+        max-width: 100%;
+        width: 30%;
+        padding: 10px;
+        font-size: 24px;
+        text-align: left;
+        align-content: center;
+        text-decoration: none;
+        color: var(--my_white);
+    }
+
+    .nav_bar_link_responsive:hover {
+        border-bottom: 3px solid var(--my_red);
+        border-radius: 5px;
+    }
+
+    .menu_top_container_responsive {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+

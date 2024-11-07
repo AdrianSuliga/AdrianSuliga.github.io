@@ -1,0 +1,56 @@
+.form_container {
+    background-color: var(--my_gray);
+    color: var(--my_white);
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding: 1vw;
+}
+
+.form_container h1 {
+    text-align: left;
+    border-bottom: 5px solid var(--my_red);
+    padding: 1vw;
+    font-size: 36px;
+}
+
+.form_container p {
+    padding: 0.5vw;
+}
+
+form {
+    padding: 10px;
+}
+
+input[type=text], textarea, select {
+    background-color: var(--my_white);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 100%;
+    border: none;
+    resize: vertical;
+    border: 2px solid var(--my_white);
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: var(--my_white);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    margin-right: 70%;
+    width: 30%;
+    border: none;
+    border: 2px solid var(--my_white);
+    border-radius: 5px;
+}
+
+input[type=text]:focus, textarea:focus, 
+input[type=submit]:focus, select:focus {
+    border: 2px solid var(--my_red);
+}

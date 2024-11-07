@@ -1,0 +1,100 @@
+article {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: var(--my_gray);
+    color: var(--my_white);
+    text-align: justify;
+    border-radius: 1vw;
+    font-size: 20px;
+}
+
+.paragraph_wrapper {
+    display: flex;
+}
+
+.paragraph_container {
+    padding: 2vw;
+    width: 70%;
+}
+
+.paragraph_container h1 {
+    text-align: left;
+    border-bottom: 5px solid var(--my_red);
+    padding: 1vw;
+    font-size: 40px;
+}
+
+.article_paragraph {
+    padding: 0.5vw;
+}
+
+.article_quote {
+    background-color: var(--my_dark);
+    text-align: center;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    border: 1px solid var(--my_red);
+}
+
+.photo_container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p1_fig_up {
+    margin-top: 3vw;
+}
+
+.p1_fig_bot {
+    margin-bottom: 3vw;
+}
+
+.article_figure {
+    padding: 1vw;
+    margin: 1vw 1vw 1vw 0vw;
+    background-color: var(--my_dark);
+    border: 5px solid var(--my_red);
+    border-radius: 1vw;
+}
+
+.article_figcaption {
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--my_red);
+}
+
+.article_image {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (orientation: portrait) {
+    article {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    .paragraph_wrapper {
+        flex-direction: column;
+    }
+
+    .paragraph_container {
+        width: 100%;
+    }
+
+    .photo_container {
+        width: 100%;
+    }
+
+    .article_figure {
+        margin: 0% 10% 10% 10%;
+        padding: 20px;
+    }
+}

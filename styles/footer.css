@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    height: 15vh;
+    color: var(--my_white);
+    background-color: var(--my_gray);
+}
+
+.footer_image {
+    height: 80%;
+}
+
+footer h1 {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 5px solid var(--my_red);
+}

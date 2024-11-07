@@ -1,0 +1,32 @@
+@font-face {
+    font-family: stdFont;
+    src: url(../resources/fonts/monoMMM_5.ttf);
+}
+
+:root {
+    --my_white: rgb(210, 210, 210);
+    --my_gray: rgb(40, 40, 40);
+    --my_dark: rgb(30, 30, 30);
+    --my_red: rgb(150, 0, 20);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: stdFont;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    background-image: url(../resources/images/main_background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (orientation: portrait) {
+    body {
+        background-image: url(../resources/images/main_background_2.webp);
+    }
+}

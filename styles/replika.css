@@ -1,0 +1,167 @@
+article {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20vh;
+    margin-bottom: 80px;
+    background-color: var(--my_gray);
+    color: var(--my_white);
+    text-align: justify;
+    border-radius: 1vw;
+    font-size: 20px;
+}
+
+.intro_container {
+    padding: 2vw;
+}
+
+.intro_container h1 {
+    text-align: left;
+    border-bottom: 5px solid var(--my_red);
+    padding: 1vw;
+    font-size: 40px;
+}
+
+.article_paragraph {
+    padding: 0.5vw;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid_item {
+    display: flex;
+    width: 100%;
+    min-width: 0%;
+    padding: 2vw;
+    gap: 1vw;
+}
+
+.grid_item h2 {
+    text-align: left;
+    border-bottom: 3px solid var(--my_red);
+    padding: 1vw;
+    font-size: 30px;
+}
+
+.grid_item_text {
+    width: 65%;
+}
+
+.grid_item_text p {
+    padding: 10px;
+}
+
+.grid_item_photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.replika_figure {
+    background-color: var(--my_dark);
+    padding: 10px;
+    border: 2px solid var(--my_red);
+    border-radius: 5px;
+}
+
+.replika_img {
+    width: 100%;
+    height: auto;
+}
+
+.replika_figcaption {
+    overflow: hidden;
+    font-size: 20px;
+    text-align: center;
+}
+
+.falke_container {
+    display: flex;
+    padding: 4vw;
+    gap: 2vw;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.falke_text h1 {
+    text-align: left;
+    border-bottom: 5px solid var(--my_red);
+    font-size: 30px;
+    padding: 1vw;
+}
+
+.falke_text p {
+    padding: 1vw;
+}
+
+.falke_text {
+    width: 70%;
+}
+
+.falke_photo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid_container {
+        grid-template-columns: auto;
+    }
+
+    .falke_container {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        padding: 2vw;
+    }
+
+    .falke_photo {
+        width: 35%;
+    }
+
+    .falke_text {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid_item {
+        flex-direction: column;
+    }
+
+    .grid_item_text {
+        width: 100%;
+    }
+
+    .grid_item_photos {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .replika_figure {
+        margin: 10%;
+    }
+
+    .replika_figcaption {
+        font-size: 24px;
+    }
+
+    .falke_container {
+        flex-direction: column;
+    }
+
+    .falke_text {
+        width: 100%;
+    }
+
+    .falke_photo {
+        width: 100%;
+    }
+}
