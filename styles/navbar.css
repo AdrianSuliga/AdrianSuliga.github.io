@@ -71,14 +71,14 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-    .navbar_responsive {
+    .navbar.responsive {
         flex-direction: column;
         height: auto;
         align-items: start;
         padding: 10px;
     }
 
-    .nav_bar_link_responsive {
+    .navbar.responsive .nav_bar_link {
         display: block;
         height: 10vh;
         max-width: 100%;
@@ -91,12 +91,12 @@ nav {
         color: var(--my_white);
     }
 
-    .nav_bar_link_responsive:hover {
+    .navbar.responsive .nav_bar_link:hover {
         border-bottom: 3px solid var(--my_red);
         border-radius: 5px;
     }
 
-    .menu_top_container_responsive {
+    .navbar.responsive .menu_top_container {
         padding: 0px;
         display: flex;
         justify-content: space-between;
