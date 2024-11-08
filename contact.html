@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="icon" type="image/x-icon" href="resources/icons/favicon.png" />
     <script src="scripts/menu_responsive.js"></script>
+    <script src="scripts/form_validate.js"></script>
   </head>
   <body>
     <header>
@@ -29,7 +30,7 @@
           alt="Game Logo, a hexagon with complicated pattern"
         />
         <div class="menu_top_container">
-          <a href="index.html" class="nav_bar_link" id="home_link">Home</a>
+          <a href="home.html" class="nav_bar_link" id="home_link">Home</a>
           <img
             class="menu_hidden"
             onclick="menuToggle()"
@@ -50,20 +51,35 @@
       <div class="form_container" id="contact_form">
         <h1>Form</h1>
         <p>If you wish to contact me, leave your contact info and message!</p>
-        <form action="contact.html">
+        <form
+          onsubmit="return validateForm()"
+          action="contact.html"
+          name="myForm"
+        >
           <label>First Name: </label><br />
-          <input type="text" placeholder="John" /><br />
+          <input
+            type="text"
+            placeholder="John"
+            name="firstName"
+            required
+          /><br />
           <label>Last Name: </label><br />
-          <input type="text" placeholder="Doe" /><br />
+          <input type="text" placeholder="Doe" name="lastName" required /><br />
           <label>E-Mail: </label><br />
-          <input type="text" placeholder="johndoe@gmail.com" /><br />
+          <input
+            type="text"
+            placeholder="johndoe@gmail.com"
+            name="emailInput"
+            required
+          /><br />
           <label>Choose topic and type your message: </label><br />
           <select form="contact_form">
             <option>Correct mistake on site</option>
             <option>Suggest new section</option>
             <option>Ask for contact</option></select
           ><br />
-          <textarea placeholder="I want to say that..."></textarea><br />
+          <textarea placeholder="I want to say that..." required></textarea
+          ><br />
           <input type="submit" value="Submit" />
         </form>
       </div>
